@@ -1,0 +1,47 @@
+
+/* Create four equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 22.5%;
+    padding: 10px;
+    height: 300px;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #2ECC71;
+    border-spacing: 10px
+     /* Should be removed. Only for demonstration */
+}
+.column2 {
+    float: left;
+    width: 22.5%;
+    padding: 10px;
+    height: 300px;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #4183D7;
+    border-spacing: 10px
+     /* Should be removed. Only for demonstration */
+}
+div {
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+
+.row
+{
+
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
